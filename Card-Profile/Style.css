@@ -1,0 +1,383 @@
+.Card{
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px 0px #FBEB7F;
+    background-color: #e2ddb0;
+    padding: 10px;
+
+    border:4px solid transparent;
+    border-image: linear-gradient(to bottom, #FFF8B6, #FFE609, #907606, #7B691A);
+    border-image-slice: 1;
+    
+    inline-size: 427px;
+    block-size: 635px;
+
+}
+
+h1{
+    position: relative;
+    
+    text-align: center;
+    font-family: 'Candara';
+    font-style:normal;
+    font-size: 32px;
+    line-height: 5px;
+    
+    top: 140px;
+    left: -20px;
+
+    color: #524050;
+}
+
+h2{
+    position: relative;
+    
+   
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    top: 140px;
+    left: -20px;
+
+    color: #524050;
+
+
+}
+
+p{
+    position:relative;
+    
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+
+    top: 140px;
+    left: -20px;
+
+    color: #524050;
+    
+
+}
+
+IMG.background{
+    
+    position: absolute;
+    inline-size: 419px; 
+    block-size: 136px;
+    inset-inline-start: -10px;
+    inset-block-start: -10px;
+    
+}
+
+IMG.Border{
+    position: absolute;
+    
+    box-shadow: 0px 7px 20px 8px #FFF7AF;
+    border-radius: 90px;
+
+    display: block;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+
+    inset-block-start: 70px;
+    inset-inline-start: 115px;
+    
+    inline-size: 153px;
+    block-size: 153px;
+    cursor: pointer;
+}
+
+IMG.photo{
+    position: absolute;
+    border: 6px solid #772038 ;
+    border-radius: 90px;
+    
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    display: block;
+    
+    inset-block-start: 0px;
+    inset-inline-start: 50px;
+    
+    inline-size: 127px;
+    block-size: 127px;
+    cursor: pointer;
+}
+
+
+
+button.follow{
+    
+    position: absolute;
+    inset-inline-start: calc(50% - 157px/2 - 96px);
+    inset-block-start: calc(50% - 38px/2 + 188.5px);
+    
+    filter: drop-shadow(0px 4px 4px #FFF7AF);
+    inline-size: 157px;
+    block-size: 38px;
+    
+    font-family: 'Candara';
+    font-weight: bold;
+    font-size: 20px;
+
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom, #FFF8B6, #FFE609, #907606, #7B691A);
+    border-image-slice: 1;
+    
+
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, #FFF8B6, #FFE609, #907606, #7B691A);
+    cursor: pointer;
+   
+}
+
+
+button.message{
+
+    position: absolute;
+    inset-inline-start: calc(50% - 157px/2 + 96px);
+    inset-block-start: calc(50% - 38px/2 + 188.5px);
+    
+    filter: drop-shadow(0px 4px 4px #FFF7AF);
+    inline-size: 157px;
+    block-size: 38px;
+    
+    font-family: 'Candara';
+    font-weight: bold;
+    font-size: 20px;
+
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom, #FFF8B6, #FFE609, #907606, #7B691A);
+    border-image-slice: 1;
+    
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, #FFF8B6, #FFE609, #907606, #7B691A);
+    cursor: pointer;
+}
+
+img.D-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 146px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.Dribble{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 146px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.D-Gold:hover{
+    opacity: 1;
+    box-shadow: 0 0 1em gold;
+    border-radius: 62px;
+}
+
+img.Github{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 89px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.G-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 89px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.G-Gold:hover{
+    opacity: 1;
+    box-shadow: 0 0 1em gold;
+    border-radius: 79px;
+}
+
+img.Spotify{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 32px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.S-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 32px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.S-Gold:hover{
+    opacity: 1;
+    box-shadow: 0 0 1em gold;
+    border-radius: 62px;
+}
+
+img.Twitter{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 25px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.T-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 25px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.T-Gold:hover{
+    opacity: 1;
+    box-shadow: 0 0 1em gold;
+    border-radius: 62px;
+}
+
+img.LinkedIn{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 82px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.L-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 82px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.L-Gold:hover{
+    opacity: 1;
+    box-shadow: 0 0 1em gold;
+    border-radius: 5px;
+}
+
+img.Instagram{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 139px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.I-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 139px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.I-Gold:hover{
+    opacity: 1;
+    box-shadow: 0 0 1em gold;
+    border-radius: 5px;
+}
+
+img.like{
+    position: absolute;
+    
+    margin-inline-start: auto;
+    margin-block-start: auto;
+    
+    inset-block-start: 15px;
+    inset-inline-start: 11px;
+    
+    display: block;
+    cursor: pointer;
+    inline-size: 33px;
+    block-size: 33px;
+
+}
+ 
+img.share{
+    position: absolute;
+    
+    margin-inline-start: auto;
+    margin-block-start: auto;
+    
+    inset-block-start: 15px;
+    inset-inline-start: 371px;
+    
+    display: block;
+    cursor: pointer;
+    inline-size: 38px;
+    block-size: 38px;
+}
+
