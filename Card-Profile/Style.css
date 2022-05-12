@@ -1,3 +1,7 @@
+body{
+    background-image: url(/imagens/background.jpg);
+}
+
 .Card{
     position: relative;
     box-sizing: border-box;
@@ -23,8 +27,8 @@ h1{
     font-size: 32px;
     line-height: 5px;
     
-    top: 140px;
-    left: -20px;
+    inset-block-start: 140px;
+    inset-inline-start: -20px;
 
     color: #524050;
 }
@@ -41,8 +45,8 @@ h2{
     text-align: center;
     text-decoration-line: underline;
     
-    top: 140px;
-    left: -20px;
+    inset-block-start: 140px;
+    inset-inline-start: -20px;
 
     color: #524050;
 
@@ -59,8 +63,8 @@ p{
     line-height: 19px;
     text-align: center;
 
-    top: 140px;
-    left: -20px;
+    inset-block-start: 140px;
+    inset-inline-start: -20px;
 
     color: #524050;
     
@@ -112,7 +116,18 @@ IMG.photo{
     cursor: pointer;
 }
 
-
+.fakefollow{
+    position: absolute;
+    inset-inline-start: calc(50% - 157px/2 - 96px);
+    inset-block-start: calc(50% - 38px/2 + 188.5px);
+    border: none;
+    
+    inline-size: 157px;
+    block-size: 38px;
+    
+    background-color: #772038;
+    box-shadow: 0px 0px 10px 0px #FBEB7F;
+}
 
 button.follow{
     
@@ -120,7 +135,7 @@ button.follow{
     inset-inline-start: calc(50% - 157px/2 - 96px);
     inset-block-start: calc(50% - 38px/2 + 188.5px);
     
-    filter: drop-shadow(0px 4px 4px #FFF7AF);
+    
     inline-size: 157px;
     block-size: 38px;
     
@@ -142,6 +157,20 @@ button.follow{
    
 }
 
+.fakemessage{
+
+    position: absolute;
+    inset-inline-start: calc(50% - 157px/2 + 96px);
+    inset-block-start: calc(50% - 38px/2 + 188.5px);
+    border: none;
+    
+    inline-size: 157px;
+    block-size: 38px;
+    
+    background-color: #524050;
+    box-shadow: 0px 0px 10px 0px #FBEB7F;
+
+}
 
 button.message{
 
@@ -149,7 +178,6 @@ button.message{
     inset-inline-start: calc(50% - 157px/2 + 96px);
     inset-block-start: calc(50% - 38px/2 + 188.5px);
     
-    filter: drop-shadow(0px 4px 4px #FFF7AF);
     inline-size: 157px;
     block-size: 38px;
     
@@ -350,34 +378,32 @@ img.I-Gold:hover{
     border-radius: 5px;
 }
 
-img.like{
-    position: absolute;
-    
-    margin-inline-start: auto;
-    margin-block-start: auto;
-    
-    inset-block-start: 15px;
-    inset-inline-start: 11px;
-    
-    display: block;
-    cursor: pointer;
-    inline-size: 33px;
-    block-size: 33px;
-
-}
- 
 img.share{
     position: absolute;
     
     margin-inline-start: auto;
     margin-block-start: auto;
     
-    inset-block-start: 15px;
-    inset-inline-start: 371px;
+    inset-block-start: 11px;
+    inset-inline-start: 367px;
     
     display: block;
     cursor: pointer;
-    inline-size: 38px;
-    block-size: 38px;
+    inline-size: 44px;
+    block-size: 44px;
 }
 
+#like{
+    position: absolute;
+    inset-inline-start: 12px;
+    inset-block-start:11px;
+    
+    background-image: url(/imagens/icons/Upbuttons/Like-E-L.png);
+    background-color: #772038;
+    block-size: 40px;
+    inline-size: 40px;
+
+    cursor: pointer;
+    border-radius: 90px;
+    border: none
+}

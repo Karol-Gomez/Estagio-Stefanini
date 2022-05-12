@@ -8,7 +8,8 @@
         <meta name="author" content="Ana Gomes" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="Style.css" type="text/css">
-        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     </head>
    
     <body>
@@ -42,9 +43,11 @@
             </article>
         
             <div class="buttons">
-            
-                <button class="follow" >FOLLOW</button>
-                <button class="message">MESSAGE</button>
+                
+                <button class="fakefollow" style="border-radius: 90px;"></button>
+                <button class="fakemessage" style="border-radius: 90px;"></button>
+                <button class="follow" style="border-radius: 90px;" >FOLLOW</button>
+                <button class="message" style="border-radius: 90px;">MESSAGE</button>
                 
                 <div class="social">
                     <img alt="Dribble" class="Dribble" src="/imagens/icons/Dribble/Dark.svg"/>
@@ -54,20 +57,60 @@
                     <img alt="LinkedIn" class="LinkedIn" src="/imagens/icons/LinkedIn/Dark.svg"/>
                     <img alt="Instagram" class="Instagram" src="/imagens/icons/Instagram/Dark.svg"/>
                     
-                        <a href="https://dribbble.com/" target="_blank"><button name="asuahsa"><img alt="Dribble" class="D-Gold" src="/imagens/icons/Dribble/Gold.svg"/></button></a>
-                        <a href="https://github.com/" target="_blank"><button><img alt="Github" class="G-Gold" src="/imagens/icons/Github/Gold.svg"/></button></a>
-                        <a href="https://spotify.com/" target="_blank"><button><img alt="Spotify" class="S-Gold" src="/imagens/icons/Spotify/Gold.svg"/></button></a>
-                        <a href="https://Twitter.com/" target="_blank"><button><img alt="Twitter" class="T-Gold" src="/imagens/icons/Twitter/Gold.svg"/></button></a>
-                        <a href="https://LinkedIn.com/" target="_blank"><button><img alt="LinkedIn" class="L-Gold" src="/imagens/icons/LinkedIn/Gold.svg"/></button></a>
-                        <a href="https://Instagram.com/" target="_blank"><button><img alt="Instagram" class="I-Gold" src="/imagens/icons/Instagram/Gold.svg"/></button></a>
+                        <a href="https://dribbble.com/" target="_blank"><button name="Dribble"><img alt="Dribble" class="D-Gold" src="/imagens/icons/Dribble/Gold.svg"/></button></a>
+                        <a href="https://github.com/" target="_blank"><button><img class="G-Gold" src="/imagens/icons/Github/Gold.svg"/></button></a>
+                        <a href="https://spotify.com/" target="_blank"><button><img class="S-Gold" src="/imagens/icons/Spotify/Gold.svg"/></button></a>
+                        <a href="https://Twitter.com/" target="_blank"><button><img class="T-Gold" src="/imagens/icons/Twitter/Gold.svg"/></button></a>
+                        <a href="https://LinkedIn.com/" target="_blank"><button><img class="L-Gold" src="/imagens/icons/LinkedIn/Gold.svg"/></button></a>
+                        <a href="https://Instagram.com/" target="_blank"><button><img class="I-Gold" src="/imagens/icons/Instagram/Gold.svg"/></button></a>
                 </div> 
         
                 <div class="upbuttons">
-                    <button><img alt="Like it!" class="like" src="/imagens/icons/Upbuttons/Like-E-L.svg"></button>
-                    <button><img alt="share it!" class="share" src="/imagens/icons/Upbuttons/Share-Light.svg"></button>
-                    <button><img alt="tks!" class="fulllike" src="/imagens/icons/Upbuttons/Like-F-L.svg"></button>
+                    <button id="like" title="Like it!" onclick="incrementClick()"></button>
+                    <button id="share" onclick="event()"><img title="Share it!" class="share" src="/imagens/icons/Upbuttons/Share-Light.svg"></button>
+                    
                 </div>
-            
+                
+               
+
+                <script type="text/javascript">
+                
+                
+                var cont = 0;
+                
+                function incrementClick() {
+                    
+                    cont++;
+                
+                if(cont % 2 == 0)
+                    {
+                    document.getElementById('like').style.backgroundColor = "#772038"
+                    document.getElementById('like').style.boxShadow = "none"
+                   //impar
+            } else {
+
+                    document.getElementById('like').style.transitionDuration = "0.2s"
+                    document.getElementById('like').style.backgroundColor = "#E2DDB0"
+                    document.getElementById('like').style.boxShadow = "0px 4px 4px #FFF7AF"   
+                   //par
+                    }
+                };
+
+                function shareit(){
+                var copyBtn = document.getElementById('#share');
+                copyBtn.addEventListener('click', function(event) {
+
+                /*Pega url*/
+                var url = window.location.href.toString();
+                url.select();
+                url.setSelectionRange(0, 9999)
+                document.execCommand("copy")
+                alert("O texto é: " + url.value);
+                })};
+
+
+                </script>
+
             </div>
                    
             
