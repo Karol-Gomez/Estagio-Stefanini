@@ -224,8 +224,8 @@ img.Dribble{
 
 img.D-Gold:hover{
     opacity: 1;
-    box-shadow: 0 0 1em gold;
-    border-radius: 62px;
+    
+    
 }
 
 img.Github{
@@ -254,8 +254,8 @@ img.G-Gold{
 
 img.G-Gold:hover{
     opacity: 1;
-    box-shadow: 0 0 1em gold;
-    border-radius: 79px;
+    
+   
 }
 
 img.Spotify{
@@ -284,8 +284,8 @@ img.S-Gold{
 
 img.S-Gold:hover{
     opacity: 1;
-    box-shadow: 0 0 1em gold;
-    border-radius: 62px;
+    
+  
 }
 
 img.Twitter{
@@ -314,8 +314,8 @@ img.T-Gold{
 
 img.T-Gold:hover{
     opacity: 1;
-    box-shadow: 0 0 1em gold;
-    border-radius: 62px;
+    
+    
 }
 
 img.LinkedIn{
@@ -344,8 +344,8 @@ img.L-Gold{
 
 img.L-Gold:hover{
     opacity: 1;
-    box-shadow: 0 0 1em gold;
-    border-radius: 5px;
+   
+    
 }
 
 img.Instagram{
@@ -374,23 +374,28 @@ img.I-Gold{
 
 img.I-Gold:hover{
     opacity: 1;
-    box-shadow: 0 0 1em gold;
-    border-radius: 5px;
+    
+    
 }
 
-img.share{
+#share{
     position: absolute;
     
-    margin-inline-start: auto;
-    margin-block-start: auto;
+    margin-inline-start: -10px;
+    margin-block-start: -3px;
     
     inset-block-start: 11px;
     inset-inline-start: 367px;
     
-    display: block;
+    
     cursor: pointer;
-    inline-size: 44px;
-    block-size: 44px;
+    inline-size: 10px;
+    block-size: 10px;
+    z-index: 20;
+    border: none;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
 }
 
 #like{
@@ -407,3 +412,591 @@ img.share{
     border-radius: 90px;
     border: none
 }
+
+
+  
+
+  
+  .Sharing button{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+
+    background-color: transparent;
+    left: 108px;
+    top: -480px;
+    z-index: 20;
+
+    
+  }
+  
+  
+  .Sharing ul{
+    position:absolute;
+    bottom: 100px;
+    right: 70px;
+    padding:0;
+    padding-right:10px;
+    margin:0;
+    list-style:none;
+    z-index:10;
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .Sharing ul li{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: -10%;
+    opacity: 0;
+    
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    transition: .3s ease-out;
+  }
+  
+  .Sharing ul li label{
+    margin-right:10px;
+    white-space: nowrap;
+    display: block;
+    margin-top: 10px;
+    padding: 5px 8px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    
+    height: 18px;
+    font-size: 16px;
+    pointer-events: none;
+    opacity:0;
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  #share:active,
+  #share:focus{
+    outline: none;
+    background-color: transparent;
+    
+   }
+   
+   #share:active + ul,
+   #share:focus + ul{
+    bottom: 10px;
+  }
+  
+  #share:active + ul li,
+  #share:focus + ul li{
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+  
+  .Card-dark{
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px 0px #55B3CB;
+    background-color: #524050;
+    padding: 10px;
+
+    left: 500px;
+    top: -4px;
+
+    border:4px solid transparent;
+    border-image: linear-gradient(to bottom, #FFF8B6, #FFE609, #907606, #7B691A);
+    border-image-slice: 1;
+    
+    inline-size: 427px;
+    block-size: 635px;
+
+}
+
+.name{
+    position: relative;
+    
+    text-align: center;
+    font-family: 'Candara';
+    font-style:normal;
+    font-size: 32px;
+    line-height: 5px;
+    
+    inset-block-start: 140px;
+    inset-inline-start: 0px;
+
+    color: #E2DDB0;
+}
+
+.prof{
+    position: relative;
+    
+   
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    inset-block-start: 140px;
+    inset-inline-start: 0px;
+
+    color: #E2DDB0;
+
+
+}
+
+.desc{
+    position:relative;
+    
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+
+    inset-block-start: 140px;
+    inset-inline-start: 0px;
+
+    color: #E2DDB0;
+    
+
+}
+
+IMG.Zaun{
+    
+    position: absolute;
+    inline-size: 419px; 
+    block-size: 136px;
+    inset-inline-start: -10px;
+    inset-block-start: -10px;
+    
+}
+
+IMG.DeBorder{
+    position: absolute;
+    
+    box-shadow: 0px 7px 20px 8px #FFF7AF;
+    border-radius: 90px;
+
+    display: block;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+
+    inset-block-start: 70px;
+    inset-inline-start: 115px;
+    
+    inline-size: 153px;
+    block-size: 153px;
+    cursor: pointer;
+}
+
+IMG.Dark{
+    position: absolute;
+    border: 6px solid #55B3CB;
+    border-radius: 90px;
+    
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    display: block;
+    
+    inset-block-start: 0px;
+    inset-inline-start: 50px;
+    
+    inline-size: 127px;
+    block-size: 127px;
+    cursor: pointer;
+}
+
+.Defakefollow{
+    position: absolute;
+    inset-inline-start: calc(50% - 157px/2 - 96px);
+    inset-block-start: calc(50% - 38px/2 + 188.5px);
+    border: none;
+    
+    inline-size: 157px;
+    block-size: 38px;
+    
+    background-color: #55B3CB;
+    box-shadow: 0px 0px 10px 0px #55B3CB;
+}
+
+button.DeFollow{
+    
+    position: absolute;
+    inset-inline-start: calc(50% - 157px/2 - 96px);
+    inset-block-start: calc(50% - 38px/2 + 188.5px);
+    
+    
+    inline-size: 157px;
+    block-size: 38px;
+    
+    font-family: 'Candara';
+    font-weight: bold;
+    font-size: 20px;
+
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom, #FFF8B6, #FFE609, #907606, #7B691A);
+    border-image-slice: 1;
+    
+
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to left, #463700, #AD9C00);
+    cursor: pointer;
+   
+}
+
+.Defakemessage{
+
+    position: absolute;
+    inset-inline-start: calc(50% - 157px/2 + 96px);
+    inset-block-start: calc(50% - 38px/2 + 188.5px);
+    border: none;
+    
+    inline-size: 157px;
+    block-size: 38px;
+    
+    background-color: #E2DDB0;
+    box-shadow: 0px 0px 10px 0px #55B3CB;
+
+}
+
+button.DeMessage{
+
+    position: absolute;
+    inset-inline-start: calc(50% - 157px/2 + 96px);
+    inset-block-start: calc(50% - 38px/2 + 188.5px);
+    
+    inline-size: 157px;
+    block-size: 38px;
+    
+    font-family: 'Candara';
+    font-weight: bold;
+    font-size: 20px;
+
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom, #FFF8B6, #FFE609, #907606, #7B691A);
+    border-image-slice: 1;
+    
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to left, #463700, #AD9C00);
+    cursor: pointer;
+}
+
+img.D-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 146px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.DeDribble{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 146px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.D-Gold:hover{
+    opacity: 1;
+    
+    
+    
+}
+
+img.DeGithub{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 89px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.G-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 89px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.G-Gold:hover{
+    opacity: 1;
+    
+    
+}
+
+img.DeSpotify{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 32px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.S-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 - 32px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.S-Gold:hover{
+    opacity: 1;
+   
+    
+}
+
+img.DeTwitter{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 25px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.T-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 25px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.T-Gold:hover{
+    opacity: 1;
+   
+    
+}
+
+img.DeLinkedIn{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 82px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.L-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 82px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.L-Gold:hover{
+    opacity: 1;
+    
+}
+
+img.DeInstagram{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 139px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.I-Gold{
+    position: absolute;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+
+    opacity: 0;
+    cursor: pointer;
+    inline-size: 37px;
+    block-size: 37px;
+    inset-inline-start: calc(50% - 37px/2 + 139px);
+    inset-block-start: calc(50% - 37px/2 + 99px);
+}
+
+img.I-Gold:hover{
+    opacity: 1;
+    
+    
+}
+
+#Deshare{
+    position: absolute;
+    
+    margin-inline-start: -10px;
+    margin-block-start: -3px;
+    
+    inset-block-start: 11px;
+    inset-inline-start: 367px;
+    
+    
+    cursor: pointer;
+    inline-size: 10px;
+    block-size: 10px;
+    z-index: 20;
+    border: none;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+#Delike{
+    position: absolute;
+    inset-inline-start: 12px;
+    inset-block-start:11px;
+    
+    background-image: url(/imagens/icons/Upbuttons/Like-E-D.svg);
+    background-color: #55B3CB;
+    block-size: 38px;
+    inline-size: 38px;
+
+    cursor: pointer;
+    border-radius: 90px;
+    border: none
+}
+
+
+  
+
+  
+  .DeSharing button{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+
+    background-color: transparent;
+    left: 108px;
+    top: -480px;
+    z-index: 20;
+
+    
+  }
+  
+  
+  .DeSharing ul{
+    position:absolute;
+    bottom: 100px;
+    right: 70px;
+    padding:0;
+    padding-right:10px;
+    margin:0;
+    list-style:none;
+    z-index:10;
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .DeSharing ul li{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: -10%;
+    opacity: 0;
+    
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    transition: .3s ease-out;
+  }
+  
+  .DeSharing ul li label{
+    margin-right:10px;
+    white-space: nowrap;
+    display: block;
+    margin-top: 10px;
+    padding: 5px 8px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    
+    height: 18px;
+    font-size: 16px;
+    pointer-events: none;
+    opacity:0;
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  #Deshare:active,
+  #Deshare:focus{
+    outline: none;
+    background-color: transparent;
+    
+   }
+   
+   #Deshare:active + ul,
+   #Deshare:focus + ul{
+    bottom: 10px;
+  }
+  
+  #Deshare:active + ul li,
+  #Deshare:focus + ul li{
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+
+  

@@ -67,8 +67,32 @@
         
                 <div class="upbuttons">
                     <button id="like" title="Like it!" onclick="incrementClick()"></button>
-                    <button id="share" onclick="event()"><img title="Share it!" class="share" src="/imagens/icons/Upbuttons/Share-Light.svg"></button>
-                    
+                
+                    <div class="Sharing" ontouchstart="">
+                        <button id="share" class="share"><img title="Share it!" class="share" src="/imagens/icons/Upbuttons/Share-Light.svg"></button>
+                        <ul>
+                            <li>
+                                <label for="sfacebook"></label></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html" target="_blank">
+                                    <button id="sfacebook"><img src="/imagens/icons/Upbuttons/Share Childs/fb-Light.svg"></button>
+                                </a>
+                            </li>
+
+                            <li>
+                                <label for="stwitter"></label>
+                                <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">
+                                    <button id="stwitter"><img src="/imagens/icons/Upbuttons/Share Childs/twt-Light.svg"></button>
+                                </a>
+                            </li>
+
+                            <li>
+                                <label for="swhatsapp"></label>
+                                <a href="https://api.whatsapp.com/send?text=http://127.0.0.1:5500/index.html" target="_blank">
+                                    <button id="swhatsapp"><img src="/imagens/icons/Upbuttons/Share Childs/wpp-Dark.svg"></button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
                
@@ -96,28 +120,129 @@
                     }
                 };
 
-                function shareit(){
-                var copyBtn = document.getElementById('#share');
-                copyBtn.addEventListener('click', function(event) {
-
-                /*Pega url*/
-                var url = window.location.href.toString();
-                url.select();
-                url.setSelectionRange(0, 9999)
-                document.execCommand("copy")
-                alert("O texto é: " + url.value);
-                })};
-
-
-                </script>
-
-            </div>
-                   
-            
+            </script>       
             
             
         </div>
         
+        <div class="Card-dark">
+
+            <article>
+            
+           
+                <div style="position: relative;">   
+                    <div class="Deback">
+                        
+                        <img alt="cover" class="Zaun" src="imagens/Zaun.jpg" />
+                
+                    </div>
+            
+                    <div>
+                        <img class="DeBorder" src="/imagens/Golden Scheme.svg" />
+                    </div>
+
+                    <div class="front">
+                        <div style="position: absolute; inset-block-start: 76px; inset-inline-start: 73px">    
+                            
+                            <img alt="icon" class="Dark" src="imagens/jinx.jpg" />
+                            
+                            <h1 class="name">Jinx Silco</h1>
+                            <h2 class="prof"><u>Software Engineer</u></h2>
+                            <p class="desc">"Love monkeys, hate lies. It's Jinx now.<br/> Powder fell down a well."</p>    
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+            <div class="Debuttons">
+                
+                <button class="Defakefollow" style="border-radius: 90px;"></button>
+                <button class="Defakemessage" style="border-radius: 90px;"></button>
+                <button class="DeFollow" style="border-radius: 90px;" >FOLLOW</button>
+                <button class="DeMessage" style="border-radius: 90px;">MESSAGE</button>
+                
+                <div class="Desocial">
+                    <img alt="Dribble" class="DeDribble" src="/imagens/icons/Dribble/Light.svg"/>
+                    <img alt="Github" class="DeGithub" src="/imagens/icons/Github/Light.svg"/>
+                    <img alt="Spotify" class="DeSpotify" src="/imagens/icons/Spotify/Light.svg"/>
+                    <img alt="Twitter" class="DeTwitter" src="/imagens/icons/Twitter/Light.svg"/>
+                    <img alt="LinkedIn" class="DeLinkedIn" src="/imagens/icons/LinkedIn/Light.svg"/>
+                    <img alt="Instagram" class="DeInstagram" src="/imagens/icons/Instagram/Light.svg"/>
+                    
+                    <div class="Gold-Butttons">
+                        <a href="https://dribbble.com/" target="_blank"><button><img class="D-Gold" src="/imagens/icons/Dribble/Gold.svg"/></button></a>
+                        <a href="https://github.com/" target="_blank"><button><img class="G-Gold" src="/imagens/icons/Github/Gold.svg"/></button></a>
+                        <a href="https://spotify.com/" target="_blank"><button><img class="S-Gold" src="/imagens/icons/Spotify/Gold.svg"/></button></a>
+                        <a href="https://Twitter.com/" target="_blank"><button><img class="T-Gold" src="/imagens/icons/Twitter/Gold.svg"/></button></a>
+                        <a href="https://LinkedIn.com/" target="_blank"><button><img class="L-Gold" src="/imagens/icons/LinkedIn/Gold.svg"/></button></a>
+                        <a href="https://Instagram.com/" target="_blank"><button><img class="I-Gold" src="/imagens/icons/Instagram/Gold.svg"/></button></a>
+                    </div>
+                
+                </div> 
+        
+                <div class="Deupbuttons">
+                    <button id="Delike" title="Like it!" onclick="DincrementClick()"></button>
+                
+                    <div class="DeSharing" ontouchstart="">
+                        <button id="Deshare" class="Deshare"><img title="Share it!" src="/imagens/icons/Upbuttons/Share-Dark.svg"></button>
+                        <ul>
+                            <li>
+                                <label for="Desfacebook"></label></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html" target="_blank">
+                                    <button id="D.sfacebook"><img src="/imagens/icons/Upbuttons/Share Childs/fb-Dark.svg"></button>
+                                </a>
+                            </li>
+
+                            <li>
+                               <label for="Destwitter"></label>
+                                <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">
+                                    <button id="D.stwitter"><img src="/imagens/icons/Upbuttons/Share Childs/twt-Dark.svg"></button>
+                                </a>
+                            </li>
+
+                            <li>
+                                <label for="Deswhatsapp"></label>
+                                <a href="https://api.whatsapp.com/send?text=http://127.0.0.1:5500/index.html" target="_blank">
+                                    <button id="D.swhatsapp"><img src="/imagens/icons/Upbuttons/Share Childs/wpp-Light.svg"></button>
+                                </a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+                
+               
+
+                <script type="text/javascript">
+                
+                
+                var cont = 0;
+                
+                function DincrementClick() {
+                    
+                    cont++;
+                
+                if(cont % 2 == 0)
+                    {
+                    document.getElementById('Delike').style.backgroundColor = "#55B3CB"
+                    document.getElementById('Delike').style.boxShadow = "none"
+                   //impar
+            } else {
+
+                    document.getElementById('Delike').style.transitionDuration = "0.2s"
+                    document.getElementById('Delike').style.backgroundColor = "#E2DDB0"
+                    document.getElementById('Delike').style.boxShadow = "0px 4px 4px #FFF7AF"   
+                   //par
+                    }
+                };
+
+               
+            </script>       
+            
+            
+        </div>
+
+        </div>
 
     </body>
 
